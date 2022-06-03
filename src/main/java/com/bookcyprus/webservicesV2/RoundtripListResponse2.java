@@ -1,0 +1,166 @@
+
+package com.bookcyprus.webservicesV2;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Java class for RoundtripListResponse complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="RoundtripListResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="BaseResponse" type="{http://webservicesV2.bookcyprus.com/}ResponseBase" minOccurs="0"/&gt;
+ *         &lt;element name="ResultCount" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="Currency" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Token" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="RoundtripsList" type="{http://webservicesV2.bookcyprus.com/}ArrayOfRoundtripListItem" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "RoundtripListResponse", propOrder = {
+    "baseResponse",
+    "resultCount",
+    "currency",
+    "token",
+    "roundtripsList"
+})
+public class RoundtripListResponse2 {
+
+    @XmlElement(name = "BaseResponse")
+    protected ResponseBase baseResponse;
+    @XmlElement(name = "ResultCount")
+    protected int resultCount;
+    @XmlElement(name = "Currency")
+    protected String currency;
+    @XmlElement(name = "Token")
+    protected String token;
+    @XmlElement(name = "RoundtripsList")
+    protected ArrayOfRoundtripListItem roundtripsList;
+
+    /**
+     * Gets the value of the baseResponse property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ResponseBase }
+     *     
+     */
+    public ResponseBase getBaseResponse() {
+        return baseResponse;
+    }
+
+    /**
+     * Sets the value of the baseResponse property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ResponseBase }
+     *     
+     */
+    public void setBaseResponse(ResponseBase value) {
+        this.baseResponse = value;
+    }
+
+    /**
+     * Gets the value of the resultCount property.
+     * 
+     */
+    public int getResultCount() {
+        return resultCount;
+    }
+
+    /**
+     * Sets the value of the resultCount property.
+     * 
+     */
+    public void setResultCount(int value) {
+        this.resultCount = value;
+    }
+
+    /**
+     * Gets the value of the currency property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCurrency() {
+        return currency;
+    }
+
+    /**
+     * Sets the value of the currency property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCurrency(String value) {
+        this.currency = value;
+    }
+
+    /**
+     * Gets the value of the token property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getToken() {
+        return token;
+    }
+
+    /**
+     * Sets the value of the token property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setToken(String value) {
+        this.token = value;
+    }
+
+    /**
+     * Gets the value of the roundtripsList property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ArrayOfRoundtripListItem }
+     *     
+     */
+    public ArrayOfRoundtripListItem getRoundtripsList() {
+        return roundtripsList;
+    }
+
+    /**
+     * Sets the value of the roundtripsList property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ArrayOfRoundtripListItem }
+     *     
+     */
+    public void setRoundtripsList(ArrayOfRoundtripListItem value) {
+        this.roundtripsList = value;
+    }
+
+}
